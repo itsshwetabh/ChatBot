@@ -4,7 +4,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 async function get() {
-    const genAI = new GoogleGenerativeAI("AIzaSyCxh--HdE-iffgzad9_uBZfx33r7J5WWXM");
+    const genAI = new GoogleGenerativeAI("");
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
     const prompt = "Explain how AI works give your answer wrapped inside an div tag , and give the text wrapped under a single div tag, do not give any css";
